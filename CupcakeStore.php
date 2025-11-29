@@ -12,7 +12,7 @@ $cupcakes = [
     [
         "name"  => "Vanilla Swirl",
         "price" => 5,
-        "num_items" => 10,
+        "num_items" => 0,
         "desc"  => "A fluffy vanilla cupcake with a smooth buttercream swirl.",
         "img"   => "vani_swirl.jpg"
     ],
@@ -26,7 +26,7 @@ $cupcakes = [
     [
         "name"  => "Cookies & Cream",
         "price" => 9,
-        "num_items" => 18,
+        "num_items" => 0,
         "desc"  => "A crushed-cookie cupcake blended with vanilla cream frosting.",
         "img"   => "cookies&cream.jpg"
     ],
@@ -55,6 +55,7 @@ $totalnum_items =
         <th>Description</th>
         <th>Price</th>
         <th>Stock</th>
+        <th>Availability</th>
     </tr>
     <tr>
         <td><img src="<?= $cupcakes[0]["img"] ?>" class="cupcake-img" alt=""></td>
@@ -62,6 +63,15 @@ $totalnum_items =
         <td><?= $cupcakes[0]["desc"] ?></td>
         <td>$ <?= $cupcakes[0]["price"] ?></td>
         <td><?= $cupcakes[0]["num_items"] ?></td>
+        <td>
+            <?php 
+            if ($cupcakes[0]["num_items"] > 0) {
+                echo "In stock!";
+            } else {
+                echo "Out of stock :(";
+            }
+            ?>
+        </td>
     </tr>
     <tr>
         <td><img src="<?= $cupcakes[1]["img"] ?>" class="cupcake-img" alt=""></td>
@@ -69,6 +79,15 @@ $totalnum_items =
         <td><?= $cupcakes[1]["desc"] ?></td>
         <td>$ <?= $cupcakes[1]["price"] ?></td>
         <td><?= $cupcakes[1]["num_items"] ?></td>
+        <td>
+            <?php 
+            if ($cupcakes[1]["num_items"] > 0) {
+                echo "In stock!";
+            } else {
+                echo "Out of stock :(";
+            }
+            ?>
+        </td>
     </tr>
     <tr>
         <td><img src="<?= $cupcakes[2]["img"] ?>" class="cupcake-img" alt=""></td>
@@ -76,6 +95,15 @@ $totalnum_items =
         <td><?= $cupcakes[2]["desc"] ?></td>
         <td>$ <?= $cupcakes[2]["price"] ?></td>
         <td><?= $cupcakes[2]["num_items"] ?></td>
+        <td>
+            <?php 
+            if ($cupcakes[2]["num_items"] > 0) {
+                echo "In stock!";
+            } else {
+                echo "Out of stock :(";
+            }
+            ?>
+        </td>
     </tr>
     <tr>
         <td><img src="<?= $cupcakes[3]["img"] ?>" class="cupcake-img" alt=""></td>
@@ -83,6 +111,15 @@ $totalnum_items =
         <td><?= $cupcakes[3]["desc"] ?></td>
         <td>$ <?= $cupcakes[3]["price"] ?></td>
         <td><?= $cupcakes[3]["num_items"] ?></td>
+        <td>
+            <?php 
+            if ($cupcakes[3]["num_items"] > 0) {
+                echo "In stock!";
+            } else {
+                echo "Out of stock :(";
+            }
+            ?>
+        </td>
     </tr>
 </table>
 <div class="footer">
@@ -93,4 +130,5 @@ $totalnum_items =
 </div>
 </body>
 </html>
+
 
