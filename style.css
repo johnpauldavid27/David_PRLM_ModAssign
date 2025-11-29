@@ -1,0 +1,78 @@
+body {
+    font-family: "Georgia", serif;
+    background: linear-gradient(to bottom right, #3d0066, #1a002e);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    padding: 40px;
+    color: #f5e6ff;
+}
+
+.cupcake-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.menu-header {
+    text-align: center;
+    margin-top: 20px;
+    color: #e8d5ff;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #2b0040;
+    box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.3);
+    border: 2px solid #d4af37;
+}
+
+th, td {
+    border: 1px solid #7a4fa3;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4b0082;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #f3e8ff;
+}
+
+tr:nth-child(even) {
+    background-color: #38005a;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+    color: #d4af37;
+    font-size: 1.1rem;
+}
+
+.creds {
+    margin-top: 50px;
+    padding: 15px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #e0c97f;
+    border-top: 2px solid #d4af37;
+    background-color: rgba(60, 0, 80, 0.3);
+}
