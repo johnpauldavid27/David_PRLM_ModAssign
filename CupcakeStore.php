@@ -89,7 +89,7 @@ $totalnum_items =
         <td><img src="<?= $cc['img'] ?>" class="cupcake-img" alt=""></td>
         <td><?= $cc['name'] ?></td>
         <td><?= $cc['desc'] ?></td>
-        <td>$ <?= $cc['price'] ?></td>
+        <td>₱ <?= $cc['price'] ?></td>
         <td><?= $cc['num_items'] ?></td>
         <td>
             <?php 
@@ -112,5 +112,6 @@ $totalnum_items =
 </div>
 </body>
 </html>
+
 
 
